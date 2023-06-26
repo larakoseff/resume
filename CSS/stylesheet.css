@@ -1,0 +1,76 @@
+*  {background-color: #B1A8B9;
+    padding: 1px; 
+}
+
+h1 {
+    color: #000000;
+    font-family: helvetica, "sans serif";
+    font-size: 1000%;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    
+  }
+
+  h2 {
+    color: #000000;
+    font-family: helvetica, "sans serif";
+    font-size: 150%;
+  }
+
+  h3 {
+    color: #000000;
+    font-family: helvetica, "sans serif";
+    font-size: 100%;
+  } 
+
+  body {
+    color: #000000;
+    font-family: helvetica, "sans serif";
+    font-size: 100%
+  }
+
+  header {
+    padding: 20px;
+  }
+  aside {
+    padding: 20px
+  }
+
+  #education {
+    padding: 20px;
+  }
+
+  #experience {
+    padding: 20px;
+  }
+
+  #skills {
+    padding: 20px;
+  }
+
+  #contact {
+    padding: 20px;
+  }
+
+  ul {padding: 20px;
+   }
+
+  /* unvisited link */
+a:link {
+    color: #000000;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #000000;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #FF9AFF;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #FF0000;
+  }
