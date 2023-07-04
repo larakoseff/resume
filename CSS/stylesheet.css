@@ -184,3 +184,79 @@ a:link {
     color: #FF0000;
     text-decoration: none;
   }
+
+
+  footer {
+    display: flex;
+  }
+
+#socialmedia {
+  flex: 1;
+
+}
+
+#message {
+  flex: 2;
+}
+
+input, textarea, #interest {
+background-color: #FF0000;
+border-style: solid;
+border-width: 1.2px;
+border-color: rgb(0, 0, 0);
+border-radius: 3px 3px 3px 3px;
+}
+
+  label {
+    width: 120px; 
+    height: 25px;
+    display: inline-block;
+    padding: 5px;
+    text-align: left;
+    } 
+
+.smallfont {
+    font-size: small;
+    text-align: left;
+    width: 120px; 
+    height: 25px;
+    display: inline-block;
+}
+
+.smallfont2 {
+    font-size: small;
+
+}
+
+.texttop {
+vertical-align: top;
+}
+
+#name, #subject, #email {
+width: 415px;
+height: 20px;
+}
+
+.centerbutton {
+background-color: blueviolet;
+width: 60px;
+height: 30px;
+color: aliceblue;
+font-family: Inter-semibold, sans-serif;
+margin-left: 8.5rem;
+}
+
+.requiredfield {
+    margin-left: 8.5rem;
+    font-size: small;
+}
+
+select {
+background-color: #FF0000;
+width: 420px;
+height: 20px;
+border-style: solid;
+border-width: 1.2px;
+border-color: rgb(0, 0, 0);
+border-radius: 3px 3px 3px 3px;
+}
