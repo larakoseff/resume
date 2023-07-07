@@ -271,10 +271,10 @@ border-radius: 3px 3px 3px 3px;
 
   #menu { 
     margin: 0;
-    width: 95%;
+    width: 95vw;
     height: 20px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     padding-bottom: 20px;
     border-style: solid;
     border-width: 1.2px;
@@ -397,13 +397,13 @@ border-radius: 3px 3px 3px 3px;
     
     picture {
     margin: 0;
-    width: 110%;
+    width: 100%;
     position: relative;}
   
     #menu { 
       background-color: #7600FF;
       margin: 0;
-      width: 100%;
+      width: 95%;
       font-family: 'Inter', sans-serif;
       height: 20px;
       font-weight: 500;
@@ -522,7 +522,7 @@ border-radius: 3px 3px 3px 3px;
 
 /* -------Large Tablet View---------*/
 
-@media all and (min-width: 768px) and (max-width: 1200px) {
+@media all and (min-width: 769px) and (max-width: 1100px) {
 
   #menu { 
     margin: 0rem 1rem;
