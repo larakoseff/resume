@@ -81,7 +81,8 @@ h1 {
   }
 
 #container {
-display: flex; 
+display: grid;
+grid-template-columns: 1fr 1fr 1fr; 
 }
 
   #bio {
@@ -118,7 +119,6 @@ display: flex;
     border-width: 1.2px;
     border-color: rgb(0, 0, 0);
     border-radius: 0px 0px 3px 3px;
-    flex: 1;
   }
 
   #experience {
@@ -129,7 +129,6 @@ display: flex;
     border-width: 1.2px;
     border-color: rgb(0, 0, 0);
     border-radius: 0px 0px 3px 3px;
-    flex: 1
   }
 
   #skills {
@@ -140,7 +139,6 @@ display: flex;
     border-width: 1.2px;
     border-color: rgb(0, 0, 0);
     border-radius: 0px 0px 3px 3px;
-    flex: 1
   }
 
   #contact {
@@ -201,8 +199,8 @@ border-radius: 3px 3px 3px 3px;
 }
 
   label {
-    width: 120px; 
-    height: 25px;
+    width: 6vw; 
+    height: 4vh;
     display: inline-block;
     padding: 5px;
     text-align: left;
@@ -229,7 +227,7 @@ vertical-align: top;
 font-family: 'Inter', sans-serif;
 font-weight: 300; 
 width: 30vw;
-height: 20px;
+height: 3vh;
 }
 
 .centerbutton {
@@ -259,19 +257,21 @@ border-color: rgb(0, 0, 0);
 border-radius: 3px 3px 3px 3px;
 }
 
-/* -------Mobile---------*/
+/* -------Mobile View---------*/
 
-@media screen and (max-width: 425px) { body {margin: 0;
+@media screen and (max-width: 500px) { 
+  
+  body {margin: 0;
   color: #000000;}
+  
   picture {
   margin: 0;
-  position: relative;
-  }
+  width: 100%;
+  position: relative;}
+
   #menu { 
-    background-color: #7600FF;
     margin: 0;
-    width: 100%;
-    font-family: 'Inter', sans-serif;
+    width: 90%;
     height: 20px;
     font-weight: 500;
     font-size: 14px;
@@ -285,25 +285,344 @@ border-radius: 3px 3px 3px 3px;
     position: relative;
     top: -5px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  } 
+    grid-template-columns: 1fr 1fr 1fr 1fr;} 
+
+    h1 {
+      margin: 0;
+        color: #FDE9FF;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 300%;
+        letter-spacing: 0.08em;
+        text-transform: capitalize;
+        text-decoration: none;
+        text-decoration-thickness: 0;
+        text-underline-offset: 0;
+      }
+
+    #bio {
+      background-color: #F9F871;
+      margin: 0rem 1rem 0rem 1rem;
+      padding: 20px;
+      border-style: solid;
+      border-width: 1.2px;
+      border-color: rgb(0, 0, 0);
+      border-radius: 0px 0px 3px 3px;
+    }
+
+    #container {
+      display: grid;
+      grid-template-columns: 1fr; 
+      }
+
+      #education {
+        background-color: #B4CAD6;
+        margin: 0rem 1rem;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1.2px;
+        border-color: rgb(0, 0, 0);
+        border-radius: 0px 0px 3px 3px;
+      }
+    
+      #experience {
+        background-color: #FDE9FF;
+        margin: 0rem 1rem;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1.2px;
+        border-color: rgb(0, 0, 0);
+        border-radius: 0px 0px 3px 3px;
+      }
+    
+      #skills {
+        background-color: #7b5900;
+        margin: 0rem 1rem;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1.2px;
+        border-color: rgb(0, 0, 0);
+        border-radius: 0px 0px 3px 3px;
+      }
+    
+      #contact {
+        background-color: #FF0000;
+        margin: 0rem 1rem;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1.2px;
+        border-color: rgb(0, 0, 0);
+        border-radius: 0px 0px 3px 3px;
+      }
+
+      label {
+        width: 20vw; 
+        height: 3vh;
+        padding: 5px;
+        text-align: left;
+        } 
+
+      #name, #subject, #email {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300; 
+        width: 55vw;
+        height: 5vw;
+        }
+
+        input, textarea, #interest {
+          background-color: #FF0000;
+          font-family: 'Inter', sans-serif;
+          font-weight: 300;
+          width: 55vw;
+          border-style: solid;
+          border-width: 1.2px;
+          border-color: rgb(0, 0, 0);
+          border-radius: 3px 3px 3px 3px;
+          }
+
   footer {
     display: grid;
     grid-template-columns: 100%;
   }
 
-#socialmedia {
-  flex: 0;
+}
+
+/* -------Large Mobile/Small Tablet View---------*/
+
+@media all and (min-width: 501px) and (max-width: 768px) {
+
+
+  body {margin: 0;
+    color: #000000;}
+    
+    picture {
+    margin: 0;
+    width: 110%;
+    position: relative;}
+  
+    #menu { 
+      background-color: #7600FF;
+      margin: 0;
+      width: 95%;
+      font-family: 'Inter', sans-serif;
+      height: 20px;
+      font-weight: 500;
+      font-size: 16px;
+      padding-bottom: 20px;
+      border-style: solid;
+      border-width: 1.2px;
+      border-color: rgb(0, 0, 0);
+      border-radius: 0px 0px 0px 0px;
+      text-align: center;
+      justify-content: center;
+      position: relative;
+      top: -5px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;} 
+  
+      h1 {
+        margin: 0;
+          color: #FDE9FF;
+          font-family: 'Inter', sans-serif;
+          font-weight: 600;
+          font-size: 350%;
+          letter-spacing: 0.08em;
+          text-transform: capitalize;
+          text-decoration: none;
+          text-decoration-thickness: 0;
+          text-underline-offset: 0;
+        }
+  
+      #bio {
+        background-color: #F9F871;
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1.2px;
+        border-color: rgb(0, 0, 0);
+        border-radius: 0px 0px 3px 3px;
+      }
+  
+      #container {
+        display: grid;
+        grid-template-columns: 1fr; 
+        }
+  
+        #education {
+          background-color: #B4CAD6;
+          margin: 0rem 1rem;
+          padding: 20px;
+          border-style: solid;
+          border-width: 1.2px;
+          border-color: rgb(0, 0, 0);
+          border-radius: 0px 0px 3px 3px;
+        }
+      
+        #experience {
+          background-color: #FDE9FF;
+          margin: 0rem 1rem;
+          padding: 20px;
+          border-style: solid;
+          border-width: 1.2px;
+          border-color: rgb(0, 0, 0);
+          border-radius: 0px 0px 3px 3px;
+        }
+      
+        #skills {
+          background-color: #7b5900;
+          margin: 0rem 1rem;
+          padding: 20px;
+          border-style: solid;
+          border-width: 1.2px;
+          border-color: rgb(0, 0, 0);
+          border-radius: 0px 0px 3px 3px;
+        }
+      
+        #contact {
+          background-color: #FF0000;
+          margin: 0rem 1rem;
+          padding: 20px;
+          border-style: solid;
+          border-width: 1.2px;
+          border-color: rgb(0, 0, 0);
+          border-radius: 0px 0px 3px 3px;
+        }
+  
+        label {
+          width: 20vw; 
+          height: 4vh;
+          padding: 5px;
+          text-align: left;
+          } 
+  
+        #name, #subject, #email {
+          font-family: 'Inter', sans-serif;
+          font-weight: 300; 
+          width: 60vw;
+          height: 4vw;
+          }
+  
+          input, textarea, #interest {
+            background-color: #FF0000;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            width: 60vw;
+            border-style: solid;
+            border-width: 1.2px;
+            border-color: rgb(0, 0, 0);
+            border-radius: 3px 3px 3px 3px;
+            }     
+  
+    footer {
+      display: grid;
+      grid-template-columns: 100%;
+    }
 
 }
 
-#empty {
-  flex: 0;
+/* -------Large Tablet View---------*/
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+
+  #menu { 
+    background-color: #7600FF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin: 0rem 1rem;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1.2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 3px 3px;
+    width: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+#bio {
+  background-color: #F9F871;
+  margin: 0rem 1rem 0rem 1rem;
+  padding: 20px;
+  border-style: solid;
+  border-width: 1.2px;
+  border-color: rgb(0, 0, 0);
+  border-radius: 0px 0px 3px 3px;
 }
 
-#message {
-  flex: 0;
-}
+#container {
+  display: grid;
+  grid-template-columns: 1fr; 
+  }
 
+  #education {
+    background-color: #B4CAD6;
+    margin: 0rem 1rem;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1.2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 3px 3px;
+  }
+
+  #experience {
+    background-color: #FDE9FF;
+    margin: 0rem 1rem;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1.2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 3px 3px;
+  }
+
+  #skills {
+    background-color: #7b5900;
+    margin: 0rem 1rem;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1.2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 3px 3px;
+  }
+
+  #contact {
+    background-color: #FF0000;
+    margin: 0rem 1rem;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1.2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 3px 3px;
+  }
+
+  label {
+    width: 15vw; 
+    height: 3vh;
+    padding: 5px;
+    text-align: left;
+    } 
+
+  #name, #subject, #email {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; 
+    width: 60vw;
+    height: 3vw;
+    }
+
+    input, textarea, #interest {
+      background-color: #FF0000;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      width: 60vw;
+      border-style: solid;
+      border-width: 1.2px;
+      border-color: rgb(0, 0, 0);
+      border-radius: 3px 3px 3px 3px;
+      }     
+
+footer {
+display: grid;
+grid-template-columns: 100%;
+}
 
 }
